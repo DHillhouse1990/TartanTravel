@@ -1,0 +1,5 @@
+# ignore packages installed by npm
+node_modules
+
+# put any other files you dont want to chec in here,
+# such as .DS_Store (0SX), *.bak, etc.
