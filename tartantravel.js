@@ -1,9 +1,15 @@
 const http = require('http'); // import module
+const mustache = require('mustache-express')// import handlebar template module
 fs = require('fs');
 
 var express = require('express');
+const { defaultMaxListeners } = require('events');
+
 var app = express();
 app.set('port', process.env.PORT || 3000);
+app.engine('mustache', mustache());
+app.set('view engine', 'mustache');
+
 
 app.get('/', function(req,res) {
     res.type('text/plain');
