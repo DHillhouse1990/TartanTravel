@@ -3,18 +3,19 @@ const mustache = require('mustache-express')// import handlebar template module
 fs = require('fs');
 
 var express = require('express');
+const router = express.Router(); // create instance of router class
 const { defaultMaxListeners } = require('events');
 
-var app = express();
+//var app = express();
 app.set('port', process.env.PORT || 3000);
 app.engine('mustache', mustache());
 app.set('view engine', 'mustache');
 
 
-app.get('/', function(req,res) {
-    res.type('text/plain');
-    res.send()
+router.get('/', function(req,res) {
+    res.send('Hello this is a router');
 })
+
 
 // custom 404 page
 app.use(function(req,res) {
