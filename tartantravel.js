@@ -1,36 +1,27 @@
-const http = require('http'); // import module
-const mustache = require('mustache-express')// import handlebar template module
+//const http = require('http'); // import module
+//const mustache = require('mustache-express')// import handlebar template module
 fs = require('fs');
 
 var express = require('express');
-const router = express.Router(); // create instance of router class
 const { defaultMaxListeners } = require('events');
+const path = require('path');
+const public = path.join(__dirname,'public');
+const router = require('./routes/ttRoutes'); 
+const bodyParser = require('body-parser');
 
-//var app = express();
+var app = express();
 app.set('port', process.env.PORT || 3000);
-app.engine('mustache', mustache());
+//app.engine('mustache', mustache());
 app.set('view engine', 'mustache');
+app.use('/', router);
+app.use(express.static(public));
+app.use(bodyParser.urlencoded({extended:false}));
 
 
-router.get('/', function(req,res) {
-    res.send('Hello this is a router');
-})
 
 
-// custom 404 page
-app.use(function(req,res) {
-    res.type('text/plain');
-    res.status(404);
-    res.send('404 - Not Found');
-})
 
-// custom 505 page
-app.use(function(err,req,res,next) {
-    console.error(err.stack);
-    res.type('text/plain');
-    res.status(500);
-    res.send('500 - Server Error');
-})
+
 
 app.listen(app.get('port'), function() {
     console.log( 'Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.')
