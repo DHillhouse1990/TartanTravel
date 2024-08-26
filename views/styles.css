@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(230, 176, 198);
+    border: 2px solid #1c6eaf;
+}
+
+h1 {
+    background-color: blue;
+}
+topnav {
+    background-color: red;
+}
