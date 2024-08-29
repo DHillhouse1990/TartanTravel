@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(230, 176, 198);
+    border: 2px solid #1c6eaf;
+}
+
+h1 {
+    background-color: blue;
+}
+.topnav{
+    background-color: red;
+    font-weight: bold;
+    padding-top: 13px;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: black;
+}
+
+
+img {
+    border:10px solid;
+    border-radius: 50%;
+    border-color: black;
+}

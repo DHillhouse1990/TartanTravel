@@ -15,6 +15,8 @@ router.get('/holiday', controller.holiday);
 
 router.get('/oceania', controller.oceania);
 
+router.get('/test', controller.test);
+
 // custom 404 page
 router.use(function(req,res) {
     res.type('text/plain');
@@ -29,5 +31,6 @@ router.use(function(err,req,res,next) {
     res.status(500);
     res.send('500 - Server Error');
 })
+
 
 module.exports = router; 
