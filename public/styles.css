@@ -15,7 +15,41 @@ h1 {
     border-color: black;
 }
 
+.headerNav {
+    background-color: rgb(102, 0, 255);
+    font-weight: bold;
+    padding-top: 13px;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: black;
+}
 
+.reviewNav {
+    height: 220px;
+    width: 80px;
+}
+
+.reviewNav ul{
+    border: 1px solid #555;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto;
+}
+
+.reviewNav li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+.reviewNav li:hover {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
 img {
     border:10px solid;
     border-radius: 50%;

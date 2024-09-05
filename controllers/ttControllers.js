@@ -6,6 +6,10 @@ exports.landing_page = function(req,res) {
     });
 }
 
+exports.reviews = function(req,res) {
+    res.render('reviews')
+}
+
 exports.about = function(req,res) {
     res.render('about')
 }
@@ -35,7 +39,9 @@ exports.asia = function(req,res) {
             
  })};
     
-
+exports.hotels = function(req,res) {
+    res.render('hotels')
+}
 
 exports.holiday = function(req,res) {
     res.render('holiday')

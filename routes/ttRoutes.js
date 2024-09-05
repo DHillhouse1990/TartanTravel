@@ -10,11 +10,11 @@ router.get('/about', controller.about);
 router.get('/asia', controller.asia);
 router.get('/europe', controller.europe);
 
-
+router.get('/reviews', controller.reviews);
 router.get('/holiday', controller.holiday);
 
 router.get('/oceania', controller.oceania);
-
+router.get('/hotels', controller.hotels);
 router.get('/test', controller.test);
 
 // custom 404 page
