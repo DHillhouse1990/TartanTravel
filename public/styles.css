@@ -6,16 +6,9 @@ body {
 h1 {
     background-color: blue;
 }
-.topnav{
-    background-color: red;
-    font-weight: bold;
-    padding-top: 13px;
-    border-radius: 10px;
-    border-width: 10px;
-    border-color: black;
-}
 
 .headerNav {
+    color: white;
     background-color: rgb(102, 0, 255);
     font-weight: bold;
     padding-top: 13px;
@@ -23,6 +16,13 @@ h1 {
     border-width: 10px;
     border-color: black;
 }
+
+.headerNav a:hover {
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
 
 .reviewNav {
     height: 220px;
@@ -59,6 +59,14 @@ img {
 }
 
 .footer {
-    border: 1px solid #080707;
-    background-color: #f1f1f1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
 }
