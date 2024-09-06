@@ -54,4 +54,11 @@ img {
     border:10px solid;
     border-radius: 50%;
     border-color: black;
+    width: 100px;
+    height: 100px;
+}
+
+.footer {
+    border: 1px solid #080707;
+    background-color: #f1f1f1;
 }

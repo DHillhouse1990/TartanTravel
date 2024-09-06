@@ -17,6 +17,7 @@ router.get('/oceania', controller.oceania);
 router.get('/hotels', controller.hotels);
 router.get('/test', controller.test);
 
+
 // custom 404 page
 router.use(function(req,res) {
     res.type('text/plain');
