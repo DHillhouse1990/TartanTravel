@@ -75,6 +75,6 @@ exports.oceania = function(req,res) {
 
 })}
 
-exports.test = function(req,res) {
-    res.render('test');
+exports.equipment = function(req,res) {
+    res.render('equipment');
 }

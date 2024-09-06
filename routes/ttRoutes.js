@@ -15,7 +15,7 @@ router.get('/holiday', controller.holiday);
 
 router.get('/oceania', controller.oceania);
 router.get('/hotels', controller.hotels);
-router.get('/test', controller.test);
+router.get('/equipment', controller.equipment);
 
 
 // custom 404 page
