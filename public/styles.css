@@ -1,28 +1,39 @@
 body {
     background-color: rgb(230, 176, 198);
     border: 2px solid #1c6eaf;
+    margin: 0px;
 }
 
+main {
+    margin-left: 20px;
+    margin-right: 20px
+}
 h1 {
     background-color: blue;
+    text-align: center;
 }
-
-.headerNav {
+.headerNav ul {
+    list-style: none;
+    background-color: rgb(78, 77, 77);
+    padding: 0%;
+    margin: 0;
+    overflow: hidden;
+    
+}
+.headerNav li {
+    float: left;
+}
+.headerNav a {
     color: white;
-    background-color: rgb(102, 0, 255);
-    font-weight: bold;
-    padding-top: 13px;
-    border-radius: 10px;
-    border-width: 10px;
-    border-color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
 }
 
 .headerNav a:hover {
-    color: white;
-    text-align: center;
-    border-bottom: 1px solid #555;
+    background-color: #f1f1f1;
 }
-
 
 .reviewNav {
     height: 220px;
