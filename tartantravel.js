@@ -21,9 +21,7 @@ app.use('/', router);
 
 
 
-fetch("https://api.holidayextras.co.uk/v1/hotel/LHRHIL")
-.then(response => console.log(response))
-.catch(error => console.log(error));
+
 
 app.listen(app.get('port'), function() {
     console.log( 'Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.')
