@@ -14,8 +14,31 @@ exports.blog = function(req,res) {
     res.render('blog')
 }
 
+exports.addblog = function(req,res) {
+    const blog = new Blog({
+        title: 'new blog',
+        snippet: 'about my new blog',
+        body: 'more about my nre blog bla bla hdgd'
+    });
+
+    blog.save()
+    .then((result) => {
+        res.send(result)
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+}
 exports.about = function(req,res) {
     res.render('about')
+}
+
+exports.contact = function(req,res) {
+    res.render('contact')
+}
+
+exports.tech = function(req,res) {
+    res.render('tech')
 }
 
 exports.asia = function(req,res) {
