@@ -12,7 +12,7 @@ router.get('/europe', controller.europe);
 
 router.get('/reviews', controller.reviews);
 router.get('/holiday', controller.holiday);
-
+router.get('/blog', controller.blog);
 router.get('/oceania', controller.oceania);
 router.get('/hotels', controller.hotels);
 router.get('/equipment', controller.equipment);

@@ -10,6 +10,10 @@ exports.reviews = function(req,res) {
     res.render('reviews')
 }
 
+exports.blog = function(req,res) {
+    res.render('blog')
+}
+
 exports.about = function(req,res) {
     res.render('about')
 }
